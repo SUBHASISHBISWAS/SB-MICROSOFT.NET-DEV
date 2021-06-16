@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b3ab64aa-9b0f-46cf-b9ad-a2a2874e1bd0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://desktop-a0i84f6/HelloService/HelloService.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HelloService.wsdl" MetadataType="Wsdl" ID="847c5173-4ade-4354-9ff8-9b06f95efbbe" SourceId="1" SourceUrl="http://desktop-a0i84f6/HelloService/HelloService.svc?wsdl" />
+    <MetadataFile FileName="HelloService.xsd" MetadataType="Schema" ID="5e8671a4-d416-4ee1-b0b5-7840f0f9075c" SourceId="1" SourceUrl="http://desktop-a0i84f6/HelloService/HelloService.svc?xsd=xsd1" />
+    <MetadataFile FileName="HelloService1.xsd" MetadataType="Schema" ID="2c7d3e1d-7cc6-4ac6-9191-90bdf0809087" SourceId="1" SourceUrl="http://desktop-a0i84f6/HelloService/HelloService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

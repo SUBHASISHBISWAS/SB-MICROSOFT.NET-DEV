@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportService", "ReportService\ReportService.csproj", "{F590294B-C47A-4384-9767-27C0BD1FDEB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportServiceHost", "ReportServiceHost\ReportServiceHost.csproj", "{563C48F7-A3D2-4378-B76E-1E543A20BE2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportServiceClient", "ReportServiceClient\ReportServiceClient.csproj", "{88DB67C9-F06B-407B-8A0B-95EDFD06BD65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F590294B-C47A-4384-9767-27C0BD1FDEB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F590294B-C47A-4384-9767-27C0BD1FDEB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F590294B-C47A-4384-9767-27C0BD1FDEB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F590294B-C47A-4384-9767-27C0BD1FDEB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{563C48F7-A3D2-4378-B76E-1E543A20BE2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{563C48F7-A3D2-4378-B76E-1E543A20BE2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{563C48F7-A3D2-4378-B76E-1E543A20BE2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{563C48F7-A3D2-4378-B76E-1E543A20BE2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88DB67C9-F06B-407B-8A0B-95EDFD06BD65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88DB67C9-F06B-407B-8A0B-95EDFD06BD65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88DB67C9-F06B-407B-8A0B-95EDFD06BD65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88DB67C9-F06B-407B-8A0B-95EDFD06BD65}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

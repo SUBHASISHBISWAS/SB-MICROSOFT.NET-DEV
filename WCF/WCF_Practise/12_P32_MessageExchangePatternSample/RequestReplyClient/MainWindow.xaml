@@ -1,0 +1,18 @@
+﻿<Window x:Class="RequestReplyClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RequestReplyClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="145" Margin="71,10,0,0" VerticalAlignment="Top" Width="345"/>
+        <Button x:Name="requestReplyBtn" Content="Request Reply Operation" HorizontalAlignment="Left" Margin="71,172,0,0" VerticalAlignment="Top" Width="345" Click="requestReplyBtn_Click"/>
+        <Button x:Name="requestReplyExceptionBtn" Content="Request Reply operation- ThrowsException " HorizontalAlignment="Left" Margin="71,206,0,0" VerticalAlignment="Top" Width="345" Click="requestReplyExceptionBtn_Click"/>
+        <Button x:Name="clearBtn" Content="Celar" HorizontalAlignment="Left" Margin="71,289,0,0" VerticalAlignment="Top" Width="345" Click="clearBtn_Click"/>
+        <Button x:Name="onewayBtn" Content="One Way Operation" HorizontalAlignment="Left" Margin="71,240,0,0" VerticalAlignment="Top" Width="345" Click="onewayBtn_Click"/>
+        <Button x:Name="oneWayExBtn" Content="One Way Operation-ThrowsException" HorizontalAlignment="Left" Margin="71,265,0,0" VerticalAlignment="Top" Width="345" Click="oneWayExBtn_Click"/>
+
+    </Grid>
+</Window>

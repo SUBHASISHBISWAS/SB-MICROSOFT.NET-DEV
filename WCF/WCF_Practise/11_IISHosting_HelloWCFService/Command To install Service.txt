@@ -1,0 +1,6 @@
+installutil -i WindowsServiceHost.exe
+
+installutil -u WindowsServiceHost.exe
+
+
+http://stackoverflow.com/questions/22492690/hhtp-error-404-3-not-found-the-page-you-are-requesting-cannot-be-served-beca

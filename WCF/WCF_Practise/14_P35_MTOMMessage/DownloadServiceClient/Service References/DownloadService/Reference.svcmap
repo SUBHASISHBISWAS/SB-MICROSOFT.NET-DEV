@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="92cdfda0-73e8-4bc1-b420-556ba03a32a9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/DownloadService/DownloadService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DownloadService.wsdl" MetadataType="Wsdl" ID="4c6556dd-d20a-4e00-952f-21b450b06725" SourceId="1" SourceUrl="http://desktop-a0i84f6/DownloadService/DownloadService.svc?wsdl" />
+    <MetadataFile FileName="DownloadService.xsd" MetadataType="Schema" ID="d43d7850-2d1c-42ea-aad9-5452983927d7" SourceId="1" SourceUrl="http://desktop-a0i84f6/DownloadService/DownloadService.svc?xsd=xsd0" />
+    <MetadataFile FileName="DownloadService1.xsd" MetadataType="Schema" ID="c038e9f7-7aa1-4c53-8d75-45b5941408b9" SourceId="1" SourceUrl="http://desktop-a0i84f6/DownloadService/DownloadService.svc?xsd=xsd1" />
+    <MetadataFile FileName="DownloadService2.xsd" MetadataType="Schema" ID="5c5df11a-935a-4172-9f71-2f44a93fd9a9" SourceId="1" SourceUrl="http://desktop-a0i84f6/DownloadService/DownloadService.svc?xsd=xsd2" />
+    <MetadataFile FileName="DownloadService.disco" MetadataType="Disco" ID="f3f1d638-0e20-43bf-a5b6-32c65acd3df4" SourceId="1" SourceUrl="http://desktop-a0i84f6/DownloadService/DownloadService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
