@@ -1,0 +1,9 @@
+﻿<Application x:Class="Subhasish.Apps.OrderSystem.RichUI.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Subhasish.Apps.OrderSystem.RichUI"
+             Startup="HandleApplicationStartUp">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

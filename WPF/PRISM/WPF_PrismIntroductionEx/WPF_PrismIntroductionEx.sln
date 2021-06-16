@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_PrismIntroductionEx", "WPF_PrismIntroductionEx\WPF_PrismIntroductionEx.csproj", "{414FF35C-DAEC-4C28-90E7-14CF9E43DA5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleAproject", "ModuleAproject\ModuleAproject.csproj", "{D01AC509-EDC8-4946-9FF4-D77DC5E2F681}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleBProject", "ModuleBProject\ModuleBProject.csproj", "{BD10C9FA-EF4F-4D79-A9A9-9DADF0D06802}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacesProject", "InterfacesProject\InterfacesProject.csproj", "{E39181D2-01BD-49CA-8F28-17084C1D7A17}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://subhasishbiswas.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = InterfacesProject\\InterfacesProject.csproj
+		SccProjectName1 = InterfacesProject
+		SccLocalPath1 = InterfacesProject
+		SccProjectUniqueName2 = ModuleAproject\\ModuleAproject.csproj
+		SccProjectName2 = ModuleAproject
+		SccLocalPath2 = ModuleAproject
+		SccProjectUniqueName3 = ModuleBProject\\ModuleBProject.csproj
+		SccProjectName3 = ModuleBProject
+		SccLocalPath3 = ModuleBProject
+		SccProjectUniqueName4 = WPF_PrismIntroductionEx\\WPF_PrismIntroductionEx.csproj
+		SccProjectName4 = WPF_PrismIntroductionEx
+		SccLocalPath4 = WPF_PrismIntroductionEx
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{414FF35C-DAEC-4C28-90E7-14CF9E43DA5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{414FF35C-DAEC-4C28-90E7-14CF9E43DA5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{414FF35C-DAEC-4C28-90E7-14CF9E43DA5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{414FF35C-DAEC-4C28-90E7-14CF9E43DA5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D01AC509-EDC8-4946-9FF4-D77DC5E2F681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D01AC509-EDC8-4946-9FF4-D77DC5E2F681}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D01AC509-EDC8-4946-9FF4-D77DC5E2F681}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D01AC509-EDC8-4946-9FF4-D77DC5E2F681}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD10C9FA-EF4F-4D79-A9A9-9DADF0D06802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD10C9FA-EF4F-4D79-A9A9-9DADF0D06802}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD10C9FA-EF4F-4D79-A9A9-9DADF0D06802}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD10C9FA-EF4F-4D79-A9A9-9DADF0D06802}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E39181D2-01BD-49CA-8F28-17084C1D7A17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E39181D2-01BD-49CA-8F28-17084C1D7A17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E39181D2-01BD-49CA-8F28-17084C1D7A17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E39181D2-01BD-49CA-8F28-17084C1D7A17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

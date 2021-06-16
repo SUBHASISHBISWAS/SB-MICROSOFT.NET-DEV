@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E68A0165-C14F-4537-B814-84425E8BD757}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Subhasish.Libraries.UI.Shared</RootNamespace>
+    <AssemblyName>Subhasish.Libraries.UI.Shared</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Deployables\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ViewBuilder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Subhasish.Libraries.SOA.Contracts.Shared\Subhasish.Libraries.SOA.Contracts.Shared.csproj">
+      <Project>{2549F1D3-E358-46F8-ABAB-3C2A5A27C171}</Project>
+      <Name>Subhasish.Libraries.SOA.Contracts.Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Subhasish.Libraries.UI.Framework\Subhasish.Libraries.UI.Framework.csproj">
+      <Project>{d5baa1b4-ec05-48de-ae53-2b89aad3cc9b}</Project>
+      <Name>Subhasish.Libraries.UI.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Subhasish.Libraries.UI.Utilities.Impl\Subhasish.Libraries.UI.Utilities.Impl.csproj">
+      <Project>{b59f36ad-4f0f-4a99-834b-ec2fb023f31a}</Project>
+      <Name>Subhasish.Libraries.UI.Utilities.Impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Subhasish.Libraries.UI.Utilities.Interfaces\Subhasish.Libraries.UI.Utilities.Interfaces.csproj">
+      <Project>{f6942949-7f23-4680-a5be-e5027345257f}</Project>
+      <Name>Subhasish.Libraries.UI.Utilities.Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

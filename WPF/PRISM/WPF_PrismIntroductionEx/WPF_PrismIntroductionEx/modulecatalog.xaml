@@ -1,0 +1,7 @@
+4, Info                  CBS    Appl: Evaluating package applicability for package Package_57_for_KB2840632~31bf3856ad364e35~x86~~6.2.2.0, applicable state: Absent
+2013-11-05 14:14:34, Info                  CBS    EvaluateApplicability, package: Package_57_for_KB2840632~31bf3856ad364e35~x86~~6.2.2.0, Package applicability: Absent.
+2013-11-05 14:14:34, Info                  CBS    Appl: detect Parent, Package: Package_58_for_KB2840632~31bf3856ad364e35~x86~~6.2.2.0, Parent: Microsoft-Windows-Embedded-NetFx4-Package~31bf3856ad364e35~x86~fi-FI~6.2.9200.16384, Disposition = Detect, VersionComp: EQ, ServiceComp: EQ, BuildComp: EQ, DistributionComp: GE, RevisionComp: GE, Exist: present
+2013-11-05 14:14:34, Info                  CBS    Appl: detectParent: package: Package_58_for_KB2840632~31bf3856ad364e35~x86~~6.2.2.0, no parent found, go absent
+2013-11-05 14:14:34, Info                  CBS    Appl: detect Parent, Package: Package_58_for_KB2840632~31bf3856ad364e35~x86~~6.2.2.0, disposition state from detectParent: Absent
+2013-11-05 14:14:34, Info                  CBS    Appl: Evaluating package applicability for package Package_58_for_KB2840632~31bf3856ad364e35~x86~~6.2.2.0, applicable state: Absent
+2013-11-05 14:14

@@ -1,0 +1,18 @@
+﻿<Window
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Subhasish.Libraries.UI.Views"
+             xmlns:ViewComponents="clr-namespace:Subhasish.Libraries.UI.ViewComponents;assembly=Subhasish.Libraries.UI.ViewComponents" x:Class="Subhasish.Libraries.UI.Views.OrderSystemDashboardView"
+             Title="Order System Dash Board UI V1.0" WindowStartupLocation="CenterScreen" Width="1000" Height="750">
+    <Grid>
+        <ContentControl x:Name="HEADER_REGION" HorizontalAlignment="Left" VerticalAlignment="Top" Height="70" Width="992">
+            <ViewComponents:HeaderView HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top"/>
+        </ContentControl>
+        <ContentControl x:Name="CONTENT_REGION" HorizontalAlignment="Left" VerticalAlignment="Top" Height="644" Width="992" Margin="0,75,0,0">
+            <ViewComponents:OrderSystemDashboardContentView HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top"/>
+        </ContentControl>
+
+    </Grid>
+</Window>

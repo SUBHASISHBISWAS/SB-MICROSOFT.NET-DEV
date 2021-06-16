@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="Subhasish.Libraries.UI.ViewComponents.HeaderView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Subhasish.Libraries.UI.ViewComponents"
+             mc:Ignorable="d" 
+             xmlns:interactivity="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+             xmlns:extensibility="clr-namespace:Subhasish.Libraries.UI.Extensibility;assembly=Subhasish.Libraries.UI.Extensibility"
+             d:DesignHeight="70" d:DesignWidth="992">
+    <Grid Background="White">
+        <Image x:Name="image" HorizontalAlignment="Left" Height="70" VerticalAlignment="Top" Width="126" Source="Resources/SamsungLogo.jpg" Stretch="Fill"/>
+        <Label x:Name="label" Content="Samsung R&amp;D Institute ,Inidia" 
+               FontSize="26"
+               FontWeight="ExtraLight"
+               HorizontalAlignment="Left"
+               VerticalContentAlignment="Center"
+               Margin="131,10,521,0" VerticalAlignment="Top" Width="340" Height="50"/>
+        <Label x:Name="label1" Content="Welcome" HorizontalAlignment="Left" Margin="616,34,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Close"
+               Foreground="Blue"
+               Cursor="Hand"
+               ToolTip="Close This Application"
+               HorizontalAlignment="Left" Margin="944,35,0,0" VerticalAlignment="Top">
+            <interactivity:Interaction.Triggers>
+                <interactivity:EventTrigger EventName="MouseDown">
+                    <extensibility:CommandAction Command="{Binding Close}" CommandParameter="True"/>
+                </interactivity:EventTrigger>
+            </interactivity:Interaction.Triggers>
+        </Label>
+        <Label x:Name="label3" Content="{Binding UserName}" HorizontalAlignment="Left" Margin="696,34,0,0" VerticalAlignment="Top" Width="153"/>
+
+    </Grid>
+</UserControl>

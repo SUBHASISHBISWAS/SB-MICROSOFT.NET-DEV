@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="Subhasish.Libraries.UI.Modules.Core.Views.HelpView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Subhasish.Libraries.UI.Modules.Core.Views"
+              xmlns:Widgets="clr-namespace:Subhasish.Libraries.UI.Modules.Core.Widgets;assembly=Subhasish.Libraries.UI.Modules.Core.Widgets"
+             mc:Ignorable="d" 
+             d:DesignHeight="528" d:DesignWidth="839">
+
+    <Grid Background="White">
+
+        <Widgets:SearchPanelWidget HorizontalAlignment="Left" Margin="471,10,0,0" VerticalAlignment="Top"/>
+        <Grid HorizontalAlignment="Left" Height="464" Margin="10,54,0,0" VerticalAlignment="Top" Width="819">
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="0,10,0,0" TextWrapping="Wrap" Text="Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document. To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries. Themes and styles also help keep your document coordinated." VerticalAlignment="Top" Height="93" Width="809"/>
+            <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="0,130,0,0" TextWrapping="Wrap" Text="Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document. To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries. Themes and styles also help keep your document coordinated." VerticalAlignment="Top" Height="93" Width="809"/>
+            <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="0,251,0,0" TextWrapping="Wrap" Text="Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document. To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries. Themes and styles also help keep your document coordinated." VerticalAlignment="Top" Height="93" Width="809"/>
+            <Label x:Name="label1" Content="Read More..."
+                   Cursor="Hand"
+                   Foreground="Blue"
+                   HorizontalAlignment="Left" Margin="34,390,0,0" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="40" Margin="10,9,0,0" VerticalAlignment="Top" Width="456">
+            <Label x:Name="label" 
+                   FontSize="18"
+                   HorizontalContentAlignment="Left"
+                   VerticalContentAlignment="Center"
+                   Content="Order System Dashboard- Help" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="281"/>
+        </Grid>
+
+    </Grid>
+</UserControl>

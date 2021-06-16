@@ -1,0 +1,17 @@
+﻿<MenuItem x:Class="Subhasish.Libraries.UI.Modules.Core.Widgets.MenuWidget"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Subhasish.Libraries.UI.Modules.Core.Widgets"
+             mc:Ignorable="d" 
+             Header="Core Actions">
+   
+        <MenuItem.Items>
+            <MenuItem Header="Import" />
+            <MenuItem Header="Export" />
+            <MenuItem Header="Analyze" />
+            <MenuItem Header="Exit" />
+        </MenuItem.Items>
+    
+</MenuItem>

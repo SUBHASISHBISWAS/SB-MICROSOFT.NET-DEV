@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="Subhasish.Libraries.UI.Modules.Core.Widgets.NavigationWidget"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Subhasish.Libraries.UI.Modules.Core.Widgets"
+             mc:Ignorable="d" 
+             d:DesignHeight="528" d:DesignWidth="148">
+
+    <UserControl.Resources>
+        <Style TargetType="Label">
+            <Setter  Property="Background" Value="Gray"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="ExtraLight"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Trigger.Setters>
+                        <Setter Property="BorderBrush" Value="Green"/>
+                        <Setter Property="BorderThickness" Value="4"/>
+                        <Setter Property="Background" Value="LightGray"/>
+                        <Setter Property="Foreground" Value="Black" />
+                        <Setter Property="FontWeight" Value="Bold"/>
+                    </Trigger.Setters>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+    <Grid Background="White">
+        <Label x:Name="label" 
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               Content="Home" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="56" Width="128" RenderTransformOrigin="0.361,-0.03"/>
+        <Label x:Name="label_Copy" 
+        	HorizontalContentAlignment="Center"
+        	VerticalContentAlignment="Center"
+        	Content="Customers" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top" Height="56" Width="128" RenderTransformOrigin="0.361,-0.03"/>
+        <Label x:Name="label_Copy1" 
+        	HorizontalContentAlignment="Center"
+        	VerticalContentAlignment="Center"
+        	Content="Orders" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top" Height="56" Width="128" RenderTransformOrigin="0.361,-0.03"/>
+        <Label x:Name="label_Copy2" 
+        	HorizontalContentAlignment="Center"
+        	VerticalContentAlignment="Center"
+        	Content="Reports" HorizontalAlignment="Left" Margin="10,222,0,0" VerticalAlignment="Top" Height="56" Width="128" RenderTransformOrigin="0.361,-0.03"/>
+        <Label x:Name="label_Copy3" 
+        	HorizontalContentAlignment="Center"
+        	VerticalContentAlignment="Center"
+        	Content="Settings" HorizontalAlignment="Left" Margin="10,294,0,0" VerticalAlignment="Top" Height="56" Width="128" RenderTransformOrigin="0.361,-0.03"/>
+        <Label x:Name="label_Copy4" 
+        	HorizontalContentAlignment="Center"
+        	VerticalContentAlignment="Center"
+        	Content="Help" HorizontalAlignment="Left" Margin="10,366,0,0" VerticalAlignment="Top" Height="56" Width="128" RenderTransformOrigin="0.361,-0.03"/>
+
+    </Grid>
+</UserControl>

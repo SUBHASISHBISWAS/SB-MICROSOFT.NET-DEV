@@ -1,0 +1,88 @@
+﻿<UserControl x:Class="Subhasish.Libraries.UI.ViewComponents.CustomersContentView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Subhasish.Libraries.UI.ViewComponents"
+             mc:Ignorable="d" 
+             d:DesignHeight="228" d:DesignWidth="992"
+             xmlns:converters="clr-namespace:Subhasish.Libraries.UI.Extensibility;assembly=Subhasish.Libraries.UI.Extensibility">
+
+    <UserControl.Resources>
+        <converters:CustomerPhotoUrlConverter x:Key="photoUrlConverter"/>
+        <converters:CustomerVideoUrlConverter x:Key="videoUrlConverter"/>
+    </UserControl.Resources>
+    <Grid Background="White">
+        <Grid HorizontalAlignment="Left" Height="228" VerticalAlignment="Top" Width="347">
+            <Label x:Name="label" Content="Customer Name" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtCustomerName"  Text="{Binding SearchString, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="10,49,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="171">
+                <TextBox.InputBindings>
+                    <KeyBinding Key="Enter" Command="{Binding Serach}"
+                                CommandParameter="{Binding ElementName=txtCustomerName,Path=Text}"/>
+                    <KeyBinding Key="Delete" Command="{Binding Reset}"/>
+                </TextBox.InputBindings>
+            </TextBox>
+            <Button x:Name="button" 
+                    Command="{Binding Serach}"
+                    CommandParameter="{Binding ElementName=txtCustomerName,Path=Text}"
+                    Content="Serach" HorizontalAlignment="Left" Margin="194,52,0,0" VerticalAlignment="Top" Width="70"/>
+            <Button x:Name="button_Copy" 
+                    Command="{Binding Reset}"
+                    Content="Reset" HorizontalAlignment="Left" Margin="269,52,0,0" VerticalAlignment="Top" Width="68"/>
+            <ListBox x:Name="lstCustomers" 
+                     DisplayMemberPath="CustomerName"
+                     ItemsSource="{Binding Customers,IsAsync=True}"
+                     IsSynchronizedWithCurrentItem="True"
+                     HorizontalAlignment="Left" Height="141" Margin="10,77,0,0" VerticalAlignment="Top" Width="327">
+                <ListBox.GroupStyle>
+                    <GroupStyle>
+                        <GroupStyle.HeaderTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <TextBlock Background="Red" Foreground="White" Text="{Binding Name}"/>
+                                </Grid>
+                            </DataTemplate>
+                        </GroupStyle.HeaderTemplate>
+                    </GroupStyle>
+                </ListBox.GroupStyle>
+            </ListBox>
+        </Grid>
+        <Grid DataContext="{Binding ElementName=lstCustomers, Path=SelectedItem}" HorizontalAlignment="Left" Height="228" Margin="347,0,0,0" VerticalAlignment="Top" Width="645">
+            <Image 
+                Stretch="Fill"
+                Source="{Binding CustomerId, Converter={StaticResource photoUrlConverter }}"
+                x:Name="image" HorizontalAlignment="Left" Height="228" VerticalAlignment="Top" Width="215"/>
+            <Label x:Name="label1" Content="Customer Id" HorizontalAlignment="Left" Margin="220,10,0,0" VerticalAlignment="Top" Width="88"/>
+            <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="313,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"
+                     Text="{Binding CustomerId}"
+                     VerticalContentAlignment="Center"
+                     Width="120" IsEnabled="False"/>
+            <Label x:Name="label1_Copy" Content="Name" HorizontalAlignment="Left" Margin="220,38,0,0" VerticalAlignment="Top" Width="88"/>
+            <TextBox x:Name="textBox1_Copy" HorizontalAlignment="Left" Height="23" Margin="313,38,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"
+            	Text="{Binding CustomerName}"
+                VerticalContentAlignment="Center"
+            	Width="120" IsEnabled="False"/>
+            <Label x:Name="label1_Copy1" Content="Location" HorizontalAlignment="Left" Margin="220,66,0,0" VerticalAlignment="Top" Width="88"/>
+            <TextBox x:Name="textBox1_Copy1" HorizontalAlignment="Left" Height="50" Margin="313,66,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"
+            	Text="{Binding Address}"
+                VerticalContentAlignment="Center"
+            	Width="120" IsEnabled="False"/>
+            <Label x:Name="label1_Copy2" Content="Credit" HorizontalAlignment="Left" Margin="220,121,0,0" VerticalAlignment="Top" Width="88"/>
+            <TextBox x:Name="textBox1_Copy2" HorizontalAlignment="Left" Height="23" Margin="313,121,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"
+            	Text="{Binding CreditLimit, StringFormat=\{0:c\}}"
+                     VerticalContentAlignment="Center"
+            	Width="120" IsEnabled="False"/>
+            <Label x:Name="label1_Copy3" Content="Status" HorizontalAlignment="Left" Margin="220,149,0,0" VerticalAlignment="Top" Width="88"/>
+            <TextBox x:Name="textBox1_Copy3" HorizontalAlignment="Left" Height="23" Margin="313,149,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"
+            	Text="{Binding ActiveStatus}"
+                     VerticalContentAlignment="Center"
+            	Width="120" IsEnabled="False"/>
+            <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Margin="358,187,0,0" VerticalAlignment="Top" Width="75"/>
+            <MediaElement x:Name="mediaElement" 
+                          Stretch="Fill"
+                          Source="{Binding CustomerId ,Converter={StaticResource videoUrlConverter}}"
+                          HorizontalAlignment="Left" Height="208" Margin="446,10,0,0" VerticalAlignment="Top" Width="189"/>
+        </Grid>
+
+    </Grid>
+</UserControl>
