@@ -52,7 +52,7 @@ namespace StockAnalyzer.CrossPlatform
         private static string API_URL = "https://ps-async.fekberg.com/api/stocks";
         private Stopwatch stopwatch = new Stopwatch();
 
-        private void Search_Click(object sender, RoutedEventArgs e)
+        private async void Search_Click(object sender, RoutedEventArgs e)
         {
             BeforeLoadingStockData();
 
@@ -65,16 +65,43 @@ namespace StockAnalyzer.CrossPlatform
             Thread.Sleep(10000);
             */
 
+            /*
             using(var client=new HttpClient())
             {
+                var responseTask = client.GetAsync($"{API_URL}/{StockIdentifier.Text }");
+                var response = await responseTask;
+                var content = await response.Content.ReadAsStringAsync();
+
                 var data = JsonConvert.DeserializeObject<IEnumerable<StockPrice>>(content);
 
                 // This is the same as ItemsSource in WPF used in the course videos
                 Stocks.Items = data;
             }
+
+            */
+
+            try
+            {
+                var store = new StockAnalyzer.Core.DataStore("/Users/subhasish/Documents/APPLE/SUBHASISH/Development/GIT/Interstellar/SB-MICROSOFT.NET-DEV/Pluralsight/Filip Ekberg/Applying Asynchronous Programming in C#/applying-asynchronous-programming-c-sharp/02/demos/Cross-Platform/Completed/StockAnalyzer.CrossPlatform/");
+
+                var responseTask = store.GetStockPrices(StockIdentifier.Text);
+
+                Stocks.Items = await responseTask;
+            }
+            catch (Exception ex)
+            {
+                Notes.Text = ex.Message;
+            }
             
 
+
+
             AfterLoadingStockData();
+        }
+
+        private void GetStocks()
+        {
+
         }
 
 
