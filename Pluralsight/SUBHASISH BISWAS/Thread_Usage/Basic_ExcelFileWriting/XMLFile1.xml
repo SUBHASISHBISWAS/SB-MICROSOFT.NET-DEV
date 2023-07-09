@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xi:fallback xmlns:xi="http://www.w3.org/2001/XInclude">
+  <TAU:testCase xmlns:TAU="http://www.medical.siemens.com/syngo/TestAutomation">
+    <TAU:name>TAU.TestCase.CT.BodyPerf.Webf_Bprf_ReanimateMMReading.TestFixtureBase`1.TestFixtureSetUp</TAU:name>
+    <TAU:testCall timeStamp="2013-09-02T01:52:39.148+05:30">
+      <TAU:purpose>SetUp</TAU:purpose>
+      <TAU:description>Pseudo-TestCase containing results of a TestFixtureSetUp method of fixture TAU.TestCase.CT.BodyPerf.Webf_Bprf_ReanimateMMReading.TestFixtureBase`1</TAU:description>
+      <TAU:parameters>
+        <TAU:parameter source="TAU.Driver" name="TestCase Root:">
+          <TAU:a href="./">BodyPerf.Webf_Bprf_ReanimateMMReading.TestFixtureB</TAU:a>
+        </TAU:parameter>
+      </TAU:parameters>
+    </TAU:testCall>
+    <TAU:fixture>
+      <TAU:fixtureName>TAU.TestCase.CT.BodyPerf.Webf_Bprf_ReanimateMMReading.TestFixtureBase`1</TAU:fixtureName>
+    </TAU:fixture>
+    <TAU:resultItem timeStamp="2013-09-02T01:52:55.277+05:30">
+      <TAU:outcome>None</TAU:outcome>
+      <TAU:message>
+        TestCase XML file "<TAU:a href="BodyPerf.Webf_Bprf_ReanimateMMReading.TestFixtureB/TestCase.xml">BodyPerf.Webf_Bprf_ReanimateMMReading.TestFixtureB/TestCase.xml</TAU:a>" is missing (has been deleted accidentally?). No details about this TestCase available.
+      </TAU:message>
+    </TAU:resultItem>
+    <TAU:result timeStamp="2013-09-02T01:52:55.277+05:30">
+      <TAU:outcome>Passed</TAU:outcome>
+    </TAU:result>
+  </TAU:testCase>
+</xi:fallback>
