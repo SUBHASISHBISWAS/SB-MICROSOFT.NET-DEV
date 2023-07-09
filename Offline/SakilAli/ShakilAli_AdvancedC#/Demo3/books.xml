@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<books xmlns="siemens">
+  <book>
+    <title>t1</title>
+    <author>a1</author>
+    <publisher>p1</publisher>
+    <price>1000</price>
+  </book>
+
+  <book>
+    <title>t2</title>
+    <author>a2</author>
+    <publisher>p2</publisher>
+    <price>2000</price>
+  </book>
+
+  <book>
+    <title>t3</title>
+    <author>a2</author>
+    <publisher>p2</publisher>
+    <price>2000</price>
+  </book>
+</books>

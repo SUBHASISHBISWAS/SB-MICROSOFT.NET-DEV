@@ -1,0 +1,2 @@
+The Composition demo starts from where the previous demo left off, which you can find in:
+  after\ErrorHandling

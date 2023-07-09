@@ -1,0 +1,17 @@
+﻿<Window x:Class="TaskSchedulerAndWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Button x:Name="btn1" Content="Start" Click="btn1_Click"/>
+        <TextBlock
+                x:Name="tb1"
+                Grid.Row="1"
+                TextWrapping="Wrap"
+                />
+    </Grid>
+</Window>

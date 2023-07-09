@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 11
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingTaskBasedApi", "UsingTaskBasedApi\UsingTaskBasedApi.csproj", "{76C93480-7D78-4889-A58D-1A172A28E4E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlowWeb", "SlowWeb\SlowWeb.csproj", "{EA420C56-8EFF-444E-A054-C137A89E9DFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76C93480-7D78-4889-A58D-1A172A28E4E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76C93480-7D78-4889-A58D-1A172A28E4E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76C93480-7D78-4889-A58D-1A172A28E4E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76C93480-7D78-4889-A58D-1A172A28E4E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA420C56-8EFF-444E-A054-C137A89E9DFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA420C56-8EFF-444E-A054-C137A89E9DFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA420C56-8EFF-444E-A054-C137A89E9DFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA420C56-8EFF-444E-A054-C137A89E9DFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

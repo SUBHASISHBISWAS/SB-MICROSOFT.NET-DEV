@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<questions>
+  <question>
+    <statement>AAA</statement>
+    <answer>1</answer>
+  </question>
+  <question>
+    <statement>BBB</statement>
+    <answer>1</answer>
+  </question>
+  <question>
+    <statement>CCC</statement>
+    <answer>2</answer>
+  </question>
+  <question>
+    <statement>DDD</statement>
+    <answer>2</answer>
+  </question>
+</questions>
